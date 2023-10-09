@@ -1,2 +1,2 @@
 snowflake-connector-python
-urllib3<1.27,>=1.21.1
+streamlit==1.25.0
