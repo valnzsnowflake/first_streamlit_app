@@ -2,6 +2,7 @@ import pandas
 import requests
 import streamlit
 import snowflake.connector
+from urllib.error import URLError
 
 streamlit.title("Hello from New Zealand")
 
