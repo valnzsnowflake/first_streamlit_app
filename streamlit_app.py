@@ -22,8 +22,9 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
-
 streamlit.header("Fruityvice Fruit Advice!")
+# def get_fruityvice_data
+
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
 
@@ -43,4 +44,5 @@ my_data_row = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_row)
 
-
+fruit_choice = streamlit.text_input('What fruit would you like information about?')
+my_cur.execute("insert into pc_rivery_db.public.fruit_load_list 'from streamlit'")
